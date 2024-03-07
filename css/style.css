@@ -8,3 +8,6 @@
     color: red;
     font-family: "Rock Salt", cursive;
 }
+.main-header {
+    background-image: url(background-image.png);
+}
