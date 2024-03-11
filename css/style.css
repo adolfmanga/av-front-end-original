@@ -7,6 +7,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+li {
+    list-style-type: none;
+}
+:root {
+ --blue:DarkBlue;
+ --gray: #808080;
+ --skyblue: #87CEEB;
+ --red: #FF0000;
+ --silver: #C0C0C0;
+ --white: #FFFFFF;
+ --darkgray: #A9A9A9;
+}
+
 .red {
     color: red;
     font-family: "Rock Salt", cursive;
@@ -31,9 +44,8 @@
         padding: 16px 0; /**/
     }
     .nav-item {
-        list-style-type: none; /*remove as bolinhas padrão dos elementos li*/
         text-transform: uppercase; /*deixa as letras toda maiscula*/
-        color:DarkMagenta ;
+        color: var(--blue);
     }
     hr {
         width: 100%;
@@ -68,4 +80,32 @@
         width: 200px; /*largura*/
         height: auto; /*evita a distorção da image */
     }
+    .main-footer {
+        background-color: var(--skyblue); /*aplica a cor no fundo do rodapé*/
+        padding: 15px 0; /*aplica espaçamento cima/baixo e nada direita e esquerda*/
+    }
+    .main-footer-container {
+        display: flex; /*deixa tudo na mesma linha*/
+        align-items: center; /*alinha todos os elementos*/
+        justify-content: space-between; /*colar nomr de um lado e lista de icones do outro*/
+    }
+    .title-smaller {
+        font-family: "Raleway", sans-serif; /*pegar as fontes importadas*/
+        color: var(--blue); /*aplica a cor */
+        font-size: 26px; /*aumenta o tamanho da fomte*/
+    }
+    .list-container {
+    display: flex; /*deixar os elementos na mesma linha*/
+    align-items: center; /*alinhar todos os elementos*/
+    justify-content: space-between; /*colocar nome de um lado e lista de icones do outro*/
+    }
+    .footer-item {
+        width: 50px;
+        height: 50px;
+        padding: 15px 0; /*aplica espaçamento 15px cima/baixo e 0px esquerda/direita*/
+    }
+    .footer-item + .footer-item {
+        margin-left: 16px;
+    }
+
 
