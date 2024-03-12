@@ -22,161 +22,129 @@
 <body>
     
 <!--cabeçalho-->
-<header class="topo">
+<header class="main-header">
 
 
 <!--navegação-->
-<nav>
+<nav class="main-nav container">
 
 
 
        <!--lista não ordenada-->
-       <ul>
+       <ul class="header-list-container">
 
 
          <!--itens da lista-->
-          '<li>
+          '<li class="nav-item">
               <a href="index.html">
                 <img src="images/logo.png" alt="logo" height="100" width="100"> </a>              
             </li>
 
 
-            <li>
+            <li class="nav-item">
                 <a href="loja.html">Loja</a>
             </li>
  
 
-             <li>
+             <li class="nav-item">
                 <a href="contato.html">Contato</a>
             </li>
 
             
-                <li>
+                <li class="nav-item">
                 <a href="sobre.html">Sobre</a>
                 </li>
 
         </ul>
 
     </nav>
+    <hr>
 </header>
 
 
 <main>
 
- <h2>Contato</h2>
- <p>Os campos com * são de preenchimento obrigatório</p>
-
+ <h2 class="title-median">Contato</h2>
+ <p class="contact-text">Os campos com * são de preenchimento obrigatório</p>
 
  <!--corpo do formulario-->
-<form>
+<form class="contact">
 
-
-
-    <label>
-
+    <label class="contact-label">
     nome*
-
-  <input type="text" required>
+  <input class="contact-field" type="text" required>
 
     </label>
 
-
-          <label>
+          <label class="contact-label">
 
     email*
 
-  <input type="email" required>
+  <input class="contact-field" type="email" required>
 
           </label>
 
-
-<label>
-<select>
-
-   <option>Dúvidas</option>
+<label class="contact-label">
+    assunto*
+<select class="contact-field">
+<option>newlestter</option>
+<option>Dúvidas</option>
 <option>Sugestões</option>
 <option>Críticas</option>
-
 </select>
+
  </label>
 
-
-<label>
+<label class="contact-label">
   mensagens*
-<textarea readonly></textarea>
+<textarea class="contact-field" required></textarea>
 </label>
 
-<button type="button">Enviar</button>
+<button class="buttom-form" type="button">Enviar</button>
 </form>
 </main>
 
+<div class="contact-maps" >
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31877.44343890803!2d-41.800817453599024!3d-2.9080382036270107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2fe7b0a81c43%3A0x46b78ca8ceae1148!2sSENAI%20Servi%C3%A7o%20Nacional%20de%20Aprendizagem%20Industrial!5e0!3m2!1spt-BR!2sbr!4v1709729931158!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-
-
-<!--RODAPÉ-->
-<footer>
-
-
-<div>
-<h3>Vendas livres store - William araujo</h3>
-
-
-<ul>
-
-        <li>
-
-            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="images/facebook.svg" alt="facebook logo"></a>
-
-        </li>
-
-</ul>
-
-<ul>
-
-    <li>
-
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram logo"></a>
-
-    </li>
-
-</ul>
-
-
-<ul>
-
-    <li>
-
-        <a href="hhttps://open.spotify.com/intl-pt" target="_blank"><img src="images/spotify.svg" alt="spotify logo"></a>
-
-    </li>
-
-</ul>
-
-
-<ul>
-
-    <li>
-
-        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube logo"></a>
-
-    </li>
-
-</ul>
-
-
-
-
-
-
 </div>
+<!--RODAPÉ-->
+<footer class="main-footer">
 
-
-
-</footer>
-
-
+    <div class="footer-container">
+    
+    <h3 class="title smaller">Vendas livres store - William Araujo</h3>
+    
+    <ul class="footer-container">
+    
+            <li class="footer-item">
+    
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="images/facebook.svg" alt="facebook logo"></a>
+    
+            </li>
+    
+        <li class="footer-item">
+    
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram logo"></a>
+    
+        </li>
+    
+        <li class="footer-item">
+    
+            <a href="hhttps://open.spotify.com/intl-pt" target="_blank"><img src="images/spotify.svg" alt="spotify logo"></a>
+    
+        </li>
+    
+        <li class="footer-item">
+    
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube logo"></a>
+    
+        </li>
+    
+    </ul>
+    
+    </div>
+    
+    </footer>
 
 </body>
 </html>

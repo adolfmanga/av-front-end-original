@@ -7,6 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*dar fonte a todo o body */
+.body {
+    font: 400 22px "roboto";
+}
+
 li {
     list-style-type: none;
 }
@@ -66,7 +71,7 @@ li {
         padding: 0 16px; /*primeiro cima/baixo, segundo esquerda/direita*/
         margin: 0 auto; /*não aplica cima/baixo, o auto distribui*/
     }
-    .about-title {
+    .title-median {
         font-family: "raleway" , sans-serif;
         font-size: 32px; /*tamanho da fonte*/
         text-align: center;
@@ -84,7 +89,7 @@ li {
         background-color: var(--skyblue); /*aplica a cor no fundo do rodapé*/
         padding: 15px 0; /*aplica espaçamento cima/baixo e nada direita e esquerda*/
     }
-    .main-footer-container {
+    .footer-container {
         display: flex; /*deixa tudo na mesma linha*/
         align-items: center; /*alinha todos os elementos*/
         justify-content: space-between; /*colar nomr de um lado e lista de icones do outro*/
@@ -94,11 +99,7 @@ li {
         color: var(--blue); /*aplica a cor */
         font-size: 26px; /*aumenta o tamanho da fomte*/
     }
-    .list-container {
-    display: flex; /*deixar os elementos na mesma linha*/
-    align-items: center; /*alinhar todos os elementos*/
-    justify-content: space-between; /*colocar nome de um lado e lista de icones do outro*/
-    }
+    
     .footer-item {
         width: 50px;
         height: 50px;
@@ -107,5 +108,61 @@ li {
     .footer-item + .footer-item {
         margin-left: 16px;
     }
+/*contato*/
+.contact-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: var(--gray);
+}
 
+.contact {
+    background-color: var(--skyblue);
+    padding: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
 
+.contact-label {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+.contact-field {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+}
+.contact-field:focus {
+    background-color: var(--silver);
+    outline: none;
+}
+textarea.contact-field {
+    height: 150px;
+    padding: 10px;
+    font-family: "roboto";
+}
+.buttom-form {
+    border-radius: 10px;
+    border: 2px solid color var(--blue);
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 2px 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttom-form:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+.contact-maps {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
