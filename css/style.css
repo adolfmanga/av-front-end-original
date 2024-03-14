@@ -6,8 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*dar fonte a todo o body */
-.body {
+.body, button, input {
     font: 400 22px "roboto";
 }
 
@@ -191,4 +192,42 @@ padding-bottom:10px }
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 30px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.product-image {
+    width: 320px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+.product-price-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-price {
+    font-family: "raleway", "san-serif";
+    font-weight: bold;
+     font-size: 20px;
+}
+.button-hover {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border-radius: 10px 2px;
+    border: 2px solid var(--skyblue);
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-hover:hover {
+    background-color: transparent;
+
 }
