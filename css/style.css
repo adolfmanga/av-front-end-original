@@ -229,5 +229,52 @@ padding-bottom:10px }
 }
 .button-hover:hover {
     background-color: transparent;
-
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse; /*faz com que as bordas se colapsem, entrem uma nas outra*/
+ }
+ 
+ .table-head-item {
+    text-align: start;
+    border-bottom: 1px solid var(--darkgray); /*adiciona a linha da borda embaixo*/
+    padding-bottom: 6px;
+    text-transform: uppercase; /*transforma o texto em maiusculas*/
+ }
+ .second-col,
+ .third-col {
+    width: 25%;
+ }
+ .cart-product {
+    padding: 8px;
+ }
+ .product-indetification {
+    display: flex;
+    align-items: center;
+ }
+ .cart-product-image {
+    width: 120px;
+    height: 80px;
+ }
+ .cart-product-title {
+    margin-left: 15px;
+ }
+ .cart-product-price {
+    font-family: "Reloway", sans-serif;
+ }
+ .product-qnt-input {
+    width: 45px;
+    height: 35px;
+    border: 2px solid ;
+    border-radius: 5px;
+    background-color: var(--silver);
+    text-align: center;
+ }
+.remove-product-button {
+    background-color: var(--red);
+    color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    padding: 4px;
+    margin-left: 5px;
 }
