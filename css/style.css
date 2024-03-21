@@ -313,4 +313,67 @@ padding-bottom:10px }
     .main-footer-container {
         flex-direction: column;
     }
+    .title-median {
+        font-size: 30px;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 680px) {
+.product-container {
+justify-content: center;
+}
+} 
+
+@media (max-width: 600px) {
+    .title-larger {
+        font-size: 36px;
+    }
+    .title-median {
+        font-size: 24px;
+    }
+}
+
+/*500px*/
+@media (max-width: 500px) {
+    .title-header {
+        font-size: 30px;
+    }
+    .title-larger {
+        font-size: 26px;
+    }
+    .title-median {
+        font-size: 18px;
+    }
+        .title-smaller {
+            font-size: 22px;
+        }
+}
+/*405px*/
+@media (max-width: 405px) {
+    .nav-item img {
+    width: 80px;
+    height: 80px;
+}
+.header-list-container {
+    font-size: 18px;
+}
+.description {
+    font-size: 19px;
+    font-family: "Madimi one", cursive;
+}
+.title-median {
+    font-size: 26px;
+}
+.title-smaller {
+    font-size: 17px;
+}
+.product-container {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-image {
+    width: 315px;
+}
 }
